@@ -1,10 +1,10 @@
 const LandingContent = () => {
     return (
-        <div className="box-content absolute inset-0 max-w-screen-2xl h-full mx-auto px-3 xsm:px-10 flex flex-col justify-center items-start">
-            <h1 style={{fontSize: "clamp(24px, 4dvw, 42px)"}} className="font-bold">
+        <div className="absolute inset-0 max-w-screen-2xl h-full mx-auto px-3 xsm:px-10 flex flex-col justify-center items-start">
+            <h1 style={{fontSize: "clamp(24px, 3.5dvw, 42px)"}} className="font-bold">
                 VII. İAL Gençlik Çalıştayı
             </h1>
-            <p style={{fontSize: "clamp(14px, 2dvw, 20px)", textWrap: "balance"} as object} className="my-7 font-medium max-w-2xl">
+            <p style={{fontSize: "clamp(12px, 2dvw, 20px)", textWrap: "balance"} as object} className="my-7 font-medium max-w-2xl">
                 İzmir’e konferans kültürü kazandıran, kalitesinden asla taviz vermeyen, Türkiye’nin en köklü ve iyi konferanslarından biri olan İzmir Atatürk Lisesi Gençlik Çalıştayı tekrardan sizlerle!
             </p>
             <button className="flex justify-between items-center relative bg-white rounded-[100px] border-[1.5px] border-[#9A0000CC]">

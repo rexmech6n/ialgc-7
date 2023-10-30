@@ -3,6 +3,7 @@ import { Poppins } from 'next/font/google'
 import './globals.css'
 import {ReactNode} from "react"
 import Header from "@/components/Header";
+import Navbar from "@/components/Navbar";
 
 type RootLayoutProps = {
   children: ReactNode
@@ -21,8 +22,9 @@ export default function RootLayout({
   return (
       <html className={poppins.className} lang='tr'>
         <body>
-          <Header />
-          {children}
+            <Header />
+            {children}
+            <Navbar />
         </body>
       </html>
   )
