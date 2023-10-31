@@ -1,6 +1,6 @@
 const LandingContent = () => {
     return (
-        <div className="absolute inset-0 max-w-screen-2xl h-full mx-auto px-3 xsm:px-10 flex flex-col justify-center items-start">
+        <div className="absolute inset-0 max-w-screen-2xl h-full mx-auto px-3 mt-5 xsm:px-10 xsm:mt-0 flex flex-col justify-center items-start">
             <h1 style={{fontSize: "clamp(24px, 3.5dvw, 42px)"}} className="font-bold">
                 VII. İAL Gençlik Çalıştayı
             </h1>
