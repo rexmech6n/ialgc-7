@@ -18,6 +18,7 @@ const config: Config = {
     },
     extend: {
       backgroundImage: {
+        'memories': 'linear-gradient(180deg, rgba(168, 24, 24, 0.25) 0%, rgba(255, 0, 0, 0.50) 100%)',
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',

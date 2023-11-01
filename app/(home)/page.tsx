@@ -1,13 +1,11 @@
-import LandingVideo from "@/app/(home)/components/LandingVideo";
-import LandingContent from "@/app/(home)/components/LandingContent";
+import Landing from "@/app/(home)/components/Landing";
+import Memories from "@/app/(home)/components/Memories";
 
 export default function Home() {
     return (
-        <section>
-            <div className="relative">
-                <LandingVideo />
-                <LandingContent />
-            </div>
-        </section>
+        <>
+            <Landing />
+            <Memories />
+        </>
     )
 }

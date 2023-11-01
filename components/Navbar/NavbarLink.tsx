@@ -20,7 +20,7 @@ const NavbarLink = ({children, path, icon}: NavbarLinkProps) => {
             <div className={`mr-1 sm:mr-2 [&>svg]:w-6 [&>svg]:h-6 [&>svg]:sm:w-8 [&>svg]:sm:h-8 [&>svg]:transition-colors [&>svg]:duration-200 [&>svg]:ease-linear ${getConditionalStyles("[&>svg]:delay-200", active)}`}>
                 {icon}
             </div>
-            <div className={`transition-all overflow-hidden whitespace-nowrap w-auto duration-300 ease-linear ${getConditionalStyles("max-w-0 opacity-0", !active)} ${getConditionalStyles("max-w-[200px] opacity-100 delay-300", active)}`}>
+            <div className={`transition-all overflow-hidden whitespace-nowrap w-auto duration-200 ease-linear ${getConditionalStyles("max-w-0 opacity-0", !active)} ${getConditionalStyles("max-w-[200px] opacity-100 delay-200", active)}`}>
                 {children}
             </div>
         </Link>
