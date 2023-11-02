@@ -5,5 +5,9 @@ type ApplicationPositionPageProps = {
 }
 
 export default function ApplicationPositionPage({params: {position}}: ApplicationPositionPageProps) {
-    return null
+    return (
+        <div>
+
+        </div>
+    )
 }
