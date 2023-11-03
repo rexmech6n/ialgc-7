@@ -1,3 +1,4 @@
+"use client"
 import {FormEventHandler, useEffect, useState} from "react";
 import {auth, signInWithEmailLink, isSignInWithEmailLink, sendSignInLinkToEmail} from "@/firebase/auth";
 import {usePathname} from "next/navigation";

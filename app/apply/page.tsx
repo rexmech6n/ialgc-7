@@ -37,6 +37,8 @@ const animation: {
     }
 }
 
+export const dynamic = "force-dynamic"
+
 export default function ApplicationPage() {
     return (
         <section className="relative text-white flex flex-col min-h-[100dvh] w-full pb-36">
