@@ -15,4 +15,5 @@ export enum ApplicationState {
 export interface Application {
     position: ApplicationPosition,
     state: ApplicationState
+    form: object
 }

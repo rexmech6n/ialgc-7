@@ -1,5 +1,5 @@
-//const videoUrl = "https://cdn.xreos.co/usercontent:videos:00d0c1e0-d032-43ba-a6fd-3c022dc5362e.webm"
-const videoUrl = "/teaser.webm"
+const videoUrl = "https://cdn.xreos.co/usercontent:videos:00d0c1e0-d032-43ba-a6fd-3c022dc5362e.webm"
+//const videoUrl = "/teaser.webm"
 
 const LandingVideo = () => {
     return (

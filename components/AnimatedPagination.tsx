@@ -1,7 +1,6 @@
 "use client"
 import {usePagination} from "@/contexts/PaginationContext";
 import {Children, ReactNode, useEffect} from "react";
-import styles from "./styles.module.css"
 import LifecycleAnimation from "@/components/LifecycleAnimation";
 
 type AnimationKeyframes = {
@@ -16,8 +15,7 @@ type PaginationProps = {
     animation: {
         enter: Animation[] | Animation,
         exit: Animation[] | Animation
-    },
-    id: string
+    }
 }
 
 const getAnimation = (animation: Animation[] | Animation, index: number) => {
@@ -27,8 +25,8 @@ const getAnimation = (animation: Animation[] | Animation, index: number) => {
     return animation
 }
 
-const AnimatedPagination = ({children, animation, id}: PaginationProps) => {
-    const {pageNum, setTotalPages} = usePagination<never>()
+const AnimatedPagination = ({children, animation}: PaginationProps) => {
+    const {pageNum, setTotalPages} = usePagination()
 
     const childrenArray = Children.toArray(children)
 

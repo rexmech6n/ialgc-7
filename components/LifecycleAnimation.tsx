@@ -50,7 +50,7 @@ const LifecycleAnimation = ({children, show, enter, exit}: LifecycleAnimationPro
 
     return (
         display &&
-        <div style={enter?.keyframe.from as any} ref={containerRef}>
+        <div className="relative z-50" style={enter?.keyframe.from as any} ref={containerRef}>
             {children}
         </div>
     )

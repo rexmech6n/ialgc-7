@@ -4,25 +4,21 @@ import {createContext, Dispatch, ReactNode, SetStateAction, useContext, useState
 
 type ContextValue<DataStore> = {
     pageNum: number, setPageNum: Dispatch<SetStateAction<number>>,
-    data: DataStore | undefined, setData: Dispatch<SetStateAction<DataStore | undefined>>,
     totalPages: number, setTotalPages: Dispatch<SetStateAction<number>>
 }
 
-type PaginationContextProviderProps<DataStore> = {
-    children: ReactNode,
-    initialValue?: DataStore
+type PaginationContextProviderProps = {
+    children: ReactNode
 }
 
 export const PaginationContext = createContext<ContextValue<any>>(null!)
 
-export const PaginationContextProvider = <DataStore,>({children} : PaginationContextProviderProps<DataStore>) => {
+export const PaginationContextProvider = ({children} : PaginationContextProviderProps) => {
     const [pageNum, setPageNum] = useState(1)
-    const [data, setData] = useState<DataStore>()
     const [totalPages, setTotalPages] = useState<number>(100)
 
     const contextValue = {
         pageNum, setPageNum,
-        data, setData,
         totalPages, setTotalPages
     }
 
