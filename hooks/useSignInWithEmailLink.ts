@@ -60,6 +60,7 @@ export default function useSignInWithEmailLink() {
     }
 
     const handleRevalidation: FormEventHandler<HTMLFormElement> = async (e) => {
+        e.preventDefault()
         setLoading(true)
         setError(null)
 
