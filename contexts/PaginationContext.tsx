@@ -1,5 +1,6 @@
 "use client"
 import {createContext, Dispatch, ReactNode, SetStateAction, useContext, useState} from "react";
+import {useUser} from "@/contexts/UserContext";
 
 
 type ContextValue<DataStore> = {
@@ -14,7 +15,9 @@ type PaginationContextProviderProps = {
 export const PaginationContext = createContext<ContextValue<any>>(null!)
 
 export const PaginationContextProvider = ({children} : PaginationContextProviderProps) => {
-    const [pageNum, setPageNum] = useState(1)
+    const {user} = useUser()
+
+    const [pageNum, setPageNum] = useState(user?.application !== null ? 3 : 1)
     const [totalPages, setTotalPages] = useState<number>(100)
 
     const contextValue = {

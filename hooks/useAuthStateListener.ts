@@ -18,9 +18,13 @@ export const useAuthStateListener = (
                 }
 
                 const data = await checkUser(user.uid)
-                if(!data) await registerUser(user.uid, user.email!)
+                if(!data) {
+                    await registerUser(user.uid, user.email!)
+                    setUser({email: user.email!, id: user.uid, application: null})
+                }
+                if(data)
+                    setUser(data as any)
 
-                setUser({email: user.email!, id: user.uid, application: null})
                 setLoading(false)
             }
             catch (e) {

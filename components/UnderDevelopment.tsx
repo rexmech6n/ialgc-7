@@ -1,0 +1,14 @@
+import React from 'react';
+import Link from "next/link";
+
+const UnderDevelopment = () => {
+    return (
+        <div className="min-h-[100dvh] flex flex-col justify-center items-center">
+            <p className="mx-1 font-semibold text-lg mb-3 text-center">Bu sayfa hala geliştirme aşamasında. Anlayışınız için teşekkürler.</p>
+            <Link href="/" className="mx-3 bg-red-800 text-white px-4 py-3 rounded-full font-medium">Ana sayfaya dön</Link>
+
+        </div>
+    );
+};
+
+export default UnderDevelopment;

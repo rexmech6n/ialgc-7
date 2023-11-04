@@ -35,7 +35,7 @@ const AnimatedPagination = ({children, animation}: PaginationProps) => {
     }, [])
 
     return (
-        <div>
+        <div className="flex-1 flex flex-col">
             {childrenArray.map((page, i) => (
                 <LifecycleAnimation
                     key={i}

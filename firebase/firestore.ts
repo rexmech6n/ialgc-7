@@ -22,9 +22,9 @@ export const registerUser = async (uid: string, email: string) => {
     return await setDoc(docRef, {email: email, application: null})
 }
 
-export const setApplication = async (uid: string, data: object) => {
+export const setUser = async (uid: string, data: User) => {
     const docRef = doc(db, "users", uid)
-    return await updateDoc(docRef, data)
+    return await updateDoc(docRef, data as object)
 }
 
 export const checkUser = async (uid: string) => {
