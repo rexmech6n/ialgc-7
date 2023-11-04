@@ -12,7 +12,7 @@ type TicketProps = {
     image: string
 }
 
-const selectedGradient = /*"red"*/ "radial-gradient(circle at center 20%, rgba(255,0,0,0.526171) 0%,rgba(0,0,0,0) 100%)"
+const selectedGradient = /*"red"*/ "radial-gradient(circle at center 20%, rgba(255,0,0,0.526171) 0%,rgba(0,0,0,0) 100%),"
 
 const Ticket = ({name, description, image}: TicketProps) => {
 
@@ -38,8 +38,8 @@ const Ticket = ({name, description, image}: TicketProps) => {
     }
 
     return (
-        <button disabled={!!position} onClick={handleClick} style={{background: "rgba(21,21,21,0.595731)" + (selected ? selectedGradient : "")}} className={`border-[1px] border-solid border-white flex flex-col justify-center max-w-[500px] my-4 mx-4 rounded-[15px] px-5 py-3.5 z-30 backdrop-blur-[10px]`}>
-            <div>
+        <button disabled={!!position} onClick={handleClick} style={{background: (selected ? selectedGradient : "") + `linear-gradient(rgba(21,21,21,0.595731), rgba(21,21,21,0.595731)), url(${image}) center center/cover`}} className={`box-border border-[1px] border-solid border-white flex flex-col justify-center max-w-[500px] my-4 mx-4 rounded-[15px] z-30 backdrop-blur-[10px]`}>
+            <div className="rounded-[15px] box-border px-5 py-3.5 w-full h-full flex-col flex justify-center backdrop-blur-[3px]">
                 <p className="[font-size:_clamp(24px,_3dvw,_26px)] my-2.5">{name}</p>
                 <p className="text-sm sm:text-base mb-2.5 font-medium px-1 md:px-3">{description}</p>
             </div>

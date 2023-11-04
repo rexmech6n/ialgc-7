@@ -1,0 +1,115 @@
+.panel-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #191926;
+}
+
+.panel-nav-item {
+    color: white;
+    margin: 20px;
+    padding: 10px 15px;
+    width: 182px;
+    text-align: center;
+    transition: all 0.5s ease;
+    background-color: #2a295b;
+    border-radius: 10px;
+}
+
+.panel-nav-item:hover {
+    cursor: pointer;
+    background-color: #312f8c;
+}
+
+.panel-active-item, .panel-active-item:hover {
+    background: #981a32;
+}
+
+.panel-content {
+    margin: 0 10px;
+    padding-bottom: 60px;
+}
+
+.user  {
+    margin: 60px auto;
+    display: block;
+    background-color: #ab2f3f;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 20px;
+    color: #e1e1e1;
+    letter-spacing: 0.05em;
+    border: 3px solid white;
+}
+
+.fields {
+
+}
+
+.field {
+    margin-bottom: 30px;
+}
+
+.field-label {
+    font-size: 18px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.field-content {
+    font-size: 16px;
+}
+
+.user-buttons {
+    margin-bottom: 20px;
+}
+
+.user-button {
+    background-color: #2a295b;
+    color: white;
+    padding: 10px 15px;
+    margin-right: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+.kabul-ret-buttons {
+    margin-bottom: 20px;
+}
+
+.user-button:hover {
+    background-color: #1c1c41;
+}
+
+.not-selected {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 15px;
+}
+
+.user-button:disabled {
+    background-color: #575757;
+    cursor: default;
+}
+
+.user-durum {
+    background-color: #2a295b;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.committee-selection {
+    border-radius: 10px;
+    outline: none;
+    padding: 5px;
+}
+
+.filter div {
+    margin-bottom: 20px;
+}
