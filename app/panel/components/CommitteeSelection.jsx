@@ -7,8 +7,10 @@ const komiteler = [
     {label: "Tarım-Orman", value: "Tarım-Orman"},
     {label: "Dışişleri", value: "Dışişleri"},
     {label: "Turizm", value: "Turizm"},
-    {label: "Tarihi Kriz", value: "Tarihi Kriz"},
+    {label: "İnönü Kabinesi", value: "İnönü Kabinesi"},
+    {label: "1. Dünya Savaşı", value: "1. Dünya Savaşı"},
 ]
+
 
 const CommitteeSelection = ({ values }) => {
 
