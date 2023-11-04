@@ -38,7 +38,7 @@ const Ticket = ({name, description, image}: TicketProps) => {
     }
 
     return (
-        <button disabled={!!position} onClick={handleClick} style={{background: "rgba(21,21,21,0.695731)" + (selected ? selectedGradient : "")}} className={`border-[1px] border-solid border-white flex flex-col justify-center max-w-[500px] my-4 mx-4 rounded-[15px] px-5 py-3.5 z-30 backdrop-blur-[10px]`}>
+        <button disabled={!!position} onClick={handleClick} style={{background: "rgba(21,21,21,0.595731)" + (selected ? selectedGradient : "")}} className={`border-[1px] border-solid border-white flex flex-col justify-center max-w-[500px] my-4 mx-4 rounded-[15px] px-5 py-3.5 z-30 backdrop-blur-[10px]`}>
             <div>
                 <p className="[font-size:_clamp(24px,_3dvw,_26px)] my-2.5">{name}</p>
                 <p className="text-sm sm:text-base mb-2.5 font-medium px-1 md:px-3">{description}</p>
