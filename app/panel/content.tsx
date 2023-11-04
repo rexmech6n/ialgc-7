@@ -20,7 +20,7 @@ export default function PanelPageContent() {
         return null
 
     return (
-        <div className="panel box-border w-screen z-[99]">
+        <div className="panel !overflow-x-hidden box-border w-screen z-[99]">
             <PanelNavbar active={active} setActive={setActive} secenekler={secenekler} />
             <PanelContent secenekler={secenekler} active={active} />
         </div>

@@ -27,7 +27,7 @@
 }
 
 .panel-content {
-    margin: 0 10px;
+    background: #312f8c;
     padding-bottom: 60px;
 }
 
@@ -87,8 +87,8 @@
     text-align: center;
     font-size: 24px;
     color: white;
-    margin-top: 20px;
     padding: 10px 15px;
+    padding-top: 30px !important;
 }
 
 .user-button:disabled {
