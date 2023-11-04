@@ -6,9 +6,15 @@ type CommitteeInputProps = {
 } & SelectHTMLAttributes<HTMLSelectElement>
 
 const options: {label: string, value: string}[] = [
-    {label: "Eğitim", value: "Eğitim"},
     {label: "Sağlık", value: "Sağlık"},
-    {label: "Güvenlik", value: "Güvenlik"}
+    {label: "İnsan Hakları", value: "İnsan Hakları"},
+    {label: "Ekonomi", value: "Ekonomi"},
+    {label: "Eğitim", value: "Eğitim"},
+    {label: "Çevre", value: "Çevre"},
+    {label: "Tarım-Orman", value: "Tarım-Orman"},
+    {label: "Dışişleri", value: "Dışişleri"},
+    {label: "Turizm", value: "Turizm"},
+    {label: "Tarihi Kriz", value: "Tarihi Kriz"},
 ]
 
 const CommitteeInput = ({question, ...props}: CommitteeInputProps) => {

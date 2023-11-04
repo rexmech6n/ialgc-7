@@ -19,7 +19,7 @@ const usersRef = collection(db, "users")
 
 export const registerUser = async (uid: string, email: string) => {
     const docRef = doc(db, "users", uid)
-    return await setDoc(docRef, {email: email, application: null})
+    return await setDoc(docRef, {email: email, application: null, id: uid})
 }
 
 export const setUser = async (uid: string, data: User) => {
