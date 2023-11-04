@@ -4,6 +4,7 @@ import {User} from "@/types/user";
 import {ApplicationPosition} from "@/types/application";
 import {updateUser} from "@/firebase/firestore";
 import {usePagination} from "@/contexts/PaginationContext";
+import {serverTimestamp} from "firebase/firestore"
 
 export default function useSetApplication() {
 
@@ -40,6 +41,7 @@ export default function useSetApplication() {
             }
         }
 
+        data.date = serverTimestamp()
 
         try {
             await updateUser(user!.id!, data)
