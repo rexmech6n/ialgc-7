@@ -10,7 +10,6 @@ const ApplicationForm = () => {
 
     const {user, setUser} = useUser()
     const {sender, loading, error} = useSetApplication()
-    const {setPageNum} = usePagination()
 
     const position = user?.application?.position
 
@@ -24,7 +23,6 @@ const ApplicationForm = () => {
         const formData = new FormData(e.target as HTMLFormElement)
 
         sender(formData)
-            .then(() => setPageNum(prev => prev+1))
     }
 
     return (

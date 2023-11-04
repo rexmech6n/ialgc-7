@@ -3,11 +3,14 @@ import {useUser} from "@/contexts/UserContext";
 import {User} from "@/types/user";
 import {ApplicationPosition} from "@/types/application";
 import {updateUser} from "@/firebase/firestore";
+import {usePagination} from "@/contexts/PaginationContext";
 
 export default function useSetApplication() {
 
     const {user, setUser} = useUser()
     const {position} = user!.application!
+
+    const {setPageNum} = usePagination()
 
     const [loading, setLoading] = useState<boolean>(false)
     const [error, setError] = useState<string |  null>(null)
@@ -41,6 +44,7 @@ export default function useSetApplication() {
         try {
             await updateUser(user!.id!, data)
             setUser(data)
+            setPageNum(prev=> prev + 1)
             setLoading(false)
             setError(null)
         }

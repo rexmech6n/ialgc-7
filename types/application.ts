@@ -2,7 +2,7 @@ export enum ApplicationPosition {
     DELEGATE = "Delege",
     ADMIN = "Gözlemci",
     PRESS = "Basın",
-    CHAIR = "Divan"
+    CHAIR = "Komite Divanı"
 }
 
 export enum ApplicationState {
