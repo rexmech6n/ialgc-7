@@ -37,7 +37,7 @@ export const getApplications = async (position: ApplicationPosition) => {
     const q = query(usersRef, where("application", "!=", null), where("application.position", "==", position))
     const snapshot = await getDocs(q)
     return snapshot.docs.map(doc => ({...doc.data(), id: doc.id}))
-        .sort((a: any, b: any) => (b.date - a.date))
+        .sort((a: any, b: any) => (a.date - b.date))
 }
 
 export const updateUser = async (uid: string, data: User) => {

@@ -1,5 +1,4 @@
 import {FormEventHandler} from "react";
-import AuthSent from "@/app/apply/components/Auth/AuthSent";
 
 type AuthRevalidationProps = {
     handleRevalidation: FormEventHandler<HTMLFormElement>,
