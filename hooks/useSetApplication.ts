@@ -30,9 +30,6 @@ export default function useSetApplication() {
             const first = formData.get("firstPreference")
             const second = formData.get("secondPreference")
             const third = formData.get("thirdPreference")
-            console.log(first)
-            console.log(second)
-            console.log(third)
 
             if(first === second || first === third || second === third) {
                 setLoading(false)

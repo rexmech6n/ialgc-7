@@ -7,7 +7,7 @@ const PositionSelector = () => {
             <h2 className="mx-4 text-2xl md:text-3xl [text-shadow:2px_2px_10px_black] mb-4 font-bold text-center">Başvuru Pozisyonu Seçin</h2>
             <div className="grid grid-rows-[repeat(4,1fr)] justify-stretch">
                 {applicationPositions.map(position => (
-                    <Ticket name={position.name} description={position.description} key={position.name} />
+                    <Ticket image={position.image} name={position.name} description={position.description} key={position.name} />
                 ))}
             </div>
         </div>
