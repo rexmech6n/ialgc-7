@@ -33,7 +33,7 @@ const Ticket = ({name, description, image}: TicketProps) => {
         })
 
         setTimeout(() => {
-            setPageNum(prev => prev+1)
+            setPageNum(2)
         }, 500)
     }
 
