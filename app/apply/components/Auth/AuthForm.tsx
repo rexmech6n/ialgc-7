@@ -23,6 +23,11 @@ const AuthForm = () => {
                         <input className={"text-center w-[clamp(230px,70dvw,320px)] py-2 bg-[rgba(21,21,21,0.395731)] border-solid border-[4px] border-red-900 rounded-[14px] outline-0 disabled:border-gray-500 transition-colors duration-200"} name={"email"} id={"email"} />
                     </div>
                     <button disabled={loading || isSent} className="transition-colors duration-200 text-sm xsm:text-base mt-3 bg-red-950 py-3 px-5 rounded-[15px] disabled:bg-gray-500 disabled:text-gray-400">Doğrula</button>
+                    {error &&
+                        <div className="bg-red-500 font-medium px-3 py-2 text-center text-sm mt-3 max-w-xs rounded-full">
+                            <p>{error}</p>
+                        </div>
+                    }
                 </>
             )}
             {isSent && <AuthSent />}
