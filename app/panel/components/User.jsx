@@ -48,7 +48,7 @@ const User = ({ user, activeQuestions, secenekler }) => {
             <div className="user-buttons">
                 <div className="kabul-ret-buttons">
                     <button onClick={handlePaymentSuccess} disabled={ durum !== ApplicationState.APPROVED || payment || loading || (komiteBelirleme && (komite.form === "Seçilmedi" || !komite.form)) } className="user-button">Ödeme Kabul</button>
-                    {komiteBelirleme && <CommitteeSelection values={{disabled: durum !== "kabul" || payment || loading, setKomite: (val) => setKomite(prev => ({...prev, form: val}))}} />}
+                    {komiteBelirleme && <CommitteeSelection values={{disabled: durum !== ApplicationState.APPROVED || payment || loading, setKomite: (val) => setKomite(prev => ({...prev, form: val}))}} />}
                 </div>
                 <div className="kabul-ret-buttons">
                     <button onClick={handleAccept} disabled={!!durum || loading} className="user-button">Kabul et</button>
