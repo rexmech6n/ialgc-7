@@ -77,7 +77,7 @@ export const applicationPositions: Position[] = [
             {question: "İzmir Atatürk Lisesi Gençlik Çalıştayı’nı tercih etme sebebiniz nedir?", name: "proficiency2", required: true, component: TextInput},
         ]
     },
-    {
+    /*{
         name: ApplicationPosition.CHAIR,
         image: "/positions/divan.webp",
         description: "Komite divanları akademik tecrübeleri olan ve daha önceden delegelik yapmış, komite başkan ve yardımcısıdır.",
@@ -96,5 +96,5 @@ export const applicationPositions: Position[] = [
             {question: "Komitede birden fazla delege sözcü olmak istiyor. Delegeler arasındaki seçimi nasıl yaparsınız?", name: "proficiency3", required: true, component: TextareaInput},
             {question: "Çalışma rehberine olan bakış açınız nedir? Sizce ideal bir çalışma rehberi hangi kriterleri karşılamalıdır??", name: "proficiency4", required: true, component: TextInput},
         ]
-    }
+    }*/
 ]
