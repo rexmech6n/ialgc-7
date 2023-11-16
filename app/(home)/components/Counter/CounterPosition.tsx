@@ -10,7 +10,7 @@ const CounterPosition = ({name, image, count}: CounterPositionProps) => {
     return (
         <div className="relative border-2 border-white rounded-3xl overflow-hidden max-w-[360px] min-w-[250px] basis-[20%] aspect-[13/10]">
             <div className="absolute w-full h-full z-20">
-                <div className="z-30 bg-[rgba(0,0,0,0.54)] backdrop-blur-[5px] absolute w-full h-full"></div>
+                <div className="z-30 bg-[rgba(21,21,21,0.59)] backdrop-blur-[3px] absolute w-full h-full"></div>
                 <Image src={image} alt={name} fill className="object-cover object-center z-20" />
             </div>
             <div className="relative z-30 w-full h-full flex flex-col justify-center items-center">
