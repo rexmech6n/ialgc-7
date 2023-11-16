@@ -116,11 +116,11 @@ export default function GamePage() {
     }, [])
 
     return (
-        <div>
+        <div className="z-[98] relative overflow-x-hidden">
             <header className="m-0 w-[431px]">
-                <h1 className="[background:url('https://i.ibb.co/Q9yv5Jk/flappy-bird-set.png')_0%_340px] m-0 p-[1.2rem]">Nayki Bird</h1>
-                <div className="flex justify-between py-2 px-1.5 bg-[#5EE270]">
-                    <div id="bestScore"></div>
+                <h1 className="text-center [background:url('https://i.ibb.co/Q9yv5Jk/flappy-bird-set.png')_0%_340px] m-0 p-[1.2rem]">Nayki Bird</h1>
+                <div className="flex justify-center py-2 px-1.5 bg-[#5EE270]">
+                    <div className="mr-4" id="bestScore"></div>
                     <div id="currentScore"></div>
                 </div>
             </header>

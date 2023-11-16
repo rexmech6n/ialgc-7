@@ -9,7 +9,7 @@ const routes = [
 
 const Navbar = () => {
     return (
-        <nav className="fixed p-3 sm:p-4 rounded-full flex bg-[#F0F0F0] bottom-6 z-50">
+        <nav className="fixed p-3 sm:p-4 rounded-full flex bg-[#F0F0F0] bottom-6 z-[99]">
             {routes.map(route => (
                 <NavbarLink key={route.path} path={route.path} icon={route.icon}>
                     {route.name}
