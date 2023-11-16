@@ -1,5 +1,5 @@
 import UnderDevelopment from "@/components/UnderDevelopment";
 
-export default function TicketPage() {
+export default function AccountPage() {
     return (<UnderDevelopment />)
 }
