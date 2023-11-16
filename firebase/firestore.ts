@@ -4,7 +4,6 @@ import {
     getDoc,
     getDocs,
     getFirestore,
-    orderBy,
     query,
     setDoc,
     updateDoc,

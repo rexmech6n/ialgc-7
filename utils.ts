@@ -19,7 +19,8 @@ type Position = {
         name: string,
         required: boolean,
         component: FC<any>
-    }[]
+    }[],
+    count?: number
 }
 
 export const getConditionalStyles =
