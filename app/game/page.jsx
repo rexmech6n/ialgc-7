@@ -118,7 +118,7 @@ export default function GamePage() {
     return (
         <div>
             <header className="m-0 w-[431px]">
-                <h1 className="[background:url('https://i.ibb.co/Q9yv5Jk/flappy-bird-set.png')_0%_340px] m-0 p-[1.2rem]">Floppy Bird</h1>
+                <h1 className="[background:url('https://i.ibb.co/Q9yv5Jk/flappy-bird-set.png')_0%_340px] m-0 p-[1.2rem]">Nayki Bird</h1>
                 <div className="flex justify-between py-2 px-1.5 bg-[#5EE270]">
                     <div id="bestScore"></div>
                     <div id="currentScore"></div>
