@@ -7,7 +7,7 @@ export default function GamePage() {
         const canvas = document.getElementById('canvas');
         const ctx = canvas.getContext('2d');
         const img = new Image();
-        img.src = "https://ialgc.org/flappy-bird-set.png";
+        img.src = "https://gcdnb.pbrd.co/images/0pinFjSP6wKr.png?o=1";
 
 // general settings
         let gamePlaying = false;
