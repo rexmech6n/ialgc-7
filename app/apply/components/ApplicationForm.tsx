@@ -44,7 +44,7 @@ const ApplicationForm = () => {
             {error && <p className="w-[clamp(230px,80dvw,400px)] mx-auto text-center mt-4">{error}</p>}
             <button disabled={loading} className="text-center w-[clamp(230px,80dvw,400px)] font-semibold mt-8 mx-auto block px-3 py-2 bg-red-800 rounded-[10px]">Gönder</button>
         </form>
-    );
-};
+    )
+}
 
 export default ApplicationForm;
