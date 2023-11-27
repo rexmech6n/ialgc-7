@@ -3,7 +3,6 @@ import {useRef, useState} from "react";
 import {useUser} from "@/contexts/UserContext";
 import {ApplicationPosition} from "@/types/application";
 import PanelContent from "@/app/panel/components/PanelContent";
-import {redirect} from "next/navigation";
 
 export default function PanelPageContent() {
     const [active, setActive] = useState(null);
