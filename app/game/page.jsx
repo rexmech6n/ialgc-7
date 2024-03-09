@@ -7,7 +7,7 @@ export default function GamePage() {
         const canvas = document.getElementById('canvas');
         const ctx = canvas.getContext('2d');
         const img = new Image();
-        img.src = "https://gcdnb.pbrd.co/images/Gjp40iXvIgPP.png?o=1";
+        img.src = "./naykibird.png";
 
 // general settings
         let gamePlaying = false;
