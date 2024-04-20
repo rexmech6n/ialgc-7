@@ -8,6 +8,7 @@ import React from "react";
 import PositionSelector from "@/app/apply/components/PositionSelector";
 import ApplicationForm from "@/app/apply/components/ApplicationForm";
 import ApplicationSent from "@/app/apply/components/ApplicationSent";
+import {Metadata} from "next"
 
 type AnimationKeyframes = {
     from: Keyframe,
@@ -41,6 +42,11 @@ const animation: {
 export const dynamic = "force-dynamic"
 
 const x = "bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgba(0,0,0,0.623305)_20%,rgba(0,0,0,1)_100%)] "
+
+export const metadata: Metadata = {
+    title: "Başvuru Yap | VII. İALGÇ",
+    description: "Alımları açık 4 pozisyondan birine başvuru yaparak VII. İALGÇ'ye katılabilirsiniz.",
+}
 
 export default function ApplicationPage() {
     return (

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Banner from "@/public/banner.webp"
 import Committee from "@/app/committees/components/Committee";
 import CommitteeGuide from "@/app/committees/components/CommitteeGuide";
+import {Metadata} from "next"
 
 const committees: {name: string, description: string, guide?: string}[] = [
     {name: "Sağlık", guide: "https://drive.google.com/file/d/1ZyAEr5xCnoIEhH65oIMC7y40QBfrDq3N/view?usp=sharing", description: "Enfeksiyon hastalıkları dünya çapında salgınlara, mortalite ve morbiditede artışa sebep olabildiği gibi birçok kişide sakatlık ve işgücü kayıplarına da neden olmuştur. Bu hastalıklar aynı zamanda geri kalmış ve gelişmekte olan ülkelerde erken yaştaki ölümlerin önde gelen nedeni olarak da belirtilmektedir. Günümüzde mülteciler ve göçmenler dahil nüfusların iç ve uluslararası hareketleri, rastgele ve kontrolsüz şehirleşme, ekonomik gelişme ve arazilerin kullanış şekillerindeki değişiklikler ile oluşan ekolojik ve iklimsel değişiklikler hastalıkların yayılması için yeni fırsatlar yaratmaktadır. Çiçek aşısının bulunması ile çiçek hastalığı gibi bazı bulaşıcı hastalıkları yeryüzünden eradike edilmiştir, ancak AIDS, Ebola, Kırım Konga Kanamalı Ateşi / COVID-19 gibi yeni hastalıklar eradike edilen hastalıkların yerini hızla almıştır. The Economist tarafından yapılan analize göre, dünyada Covid-19'dan hayatını kaybedenlerin sayısının 14 milyon ile 23,5 milyon arasında olduğunu tahmin edilmekte, ülkemizde ise 102.174 kişinin ise yaşamını yitirdiği açıklanmıştır. Ülkemizdeki iç ve uluslararası hareketliliği, ekolojik ve iklimsel değişiklikleri göz önünde bulundurularak olası salgın hastalıklara karşı ne gibi önlemler alınabilir?"},
@@ -17,6 +18,10 @@ const committees: {name: string, description: string, guide?: string}[] = [
     {name: "1. Dünya Savaşı", description: "Avrupa'daki halkların ulusalcılık anlayışı sonucu yükselen ulus devletler Dünya siyasetinde askeri ve politik dominasyon sağlamak için; kolonileşme, sanayileşme, askeri teknoloji ve bilim alanlarında ufku gözükmeyen bir rekabet içine girdiler. Bu rekabet özellikle siyasi birliğini daha geç sağlamış Alman İmparatorluğu'nun Britanya'nın global hegemonyasını kendi üzerine almak istemesiyle adeta bir yarışa döndü. Bu yarış devletlerin menfaatlerini korumak için kutuplaşmaları, bloklara bölünmeleriyle sonuçlandı. Bu bloklaşmalar 20. Yüzyılın ilk çeyreğinde Avrupa'da tutuşması muhtemel bir kıvılcımın tüm dünyaya sıçramasını kaçınılmaz kılmıştı. Modernleşmiş ordular, reforme edilmiş militer doktrinler ve yenilenmiş kurmay kadroları uzun yıllar sürecek bu yangına körük olacaktı. Dünyayı yakacak bu yangını başlatmaya gereken kıvılcım için ise Saraybosna'da ateşlenecek bir kurşun yeterli gelecekti."},
 ]
 
+export const metadata: Metadata = {
+    title: "Komitelerimiz | VII. İALGÇ",
+    description: "Güncel ve yaratıcı konuları ele alan komitelerimize bir göz atın."
+}
 
 export default function CommitteesPage() {
     return (
