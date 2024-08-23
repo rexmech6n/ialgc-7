@@ -10,7 +10,7 @@ const LandingContent = () => {
                 transition={{duration: 0.2}}
             >
                 <h1 style={{fontSize: "clamp(24px, 3.5dvw, 42px)"}} className="font-bold">
-                    VII. İAL Gençlik Çalıştayı
+                    İAL Gençlik Çalıştayı
                 </h1>
             </AnimationContainer>
 

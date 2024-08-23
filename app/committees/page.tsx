@@ -19,7 +19,7 @@ const committees: {name: string, description: string, guide?: string}[] = [
 ]
 
 export const metadata: Metadata = {
-    title: "Komitelerimiz | VII. İALGÇ",
+    title: "Komitelerimiz | İAL Gençlik Çalıştayı",
     description: "Güncel ve yaratıcı konuları ele alan komitelerimize bir göz atın."
 }
 

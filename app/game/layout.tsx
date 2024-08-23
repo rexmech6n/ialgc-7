@@ -6,7 +6,7 @@ type GameLayoutProps = {
 }
 
 export const metadata: Metadata = {
-    title: "Nayki Bird | VII. İALGÇ",
+    title: "Nayki Bird | İAL Gençlik Çalıştayı",
     description: "Konferansımızın resmi oyunu olan Nayki Bird'ü deneyin!",
 }
 
