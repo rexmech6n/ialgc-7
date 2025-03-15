@@ -1,15 +1,19 @@
 import {ReactNode} from "react"
 import {Metadata} from "next"
+import {notFound} from "next/navigation"
 
 type GameLayoutProps = {
     children: ReactNode
 }
 
 export const metadata: Metadata = {
-    title: "Nayki Bird | İAL Gençlik Çalıştayı",
-    description: "Konferansımızın resmi oyunu olan Nayki Bird'ü deneyin!",
+    title: "İAL Gençlik Çalıştayı",
+    description: "Konferansımızın resmi oyununu deneyin!",
 }
 
 export default function GameLayout({ children } : GameLayoutProps) {
-    return children
+
+    return notFound()
+
+    //return children
 }
