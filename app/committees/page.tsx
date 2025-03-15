@@ -3,6 +3,7 @@ import Banner from "@/public/banner.webp"
 import Committee from "@/app/committees/components/Committee";
 import CommitteeGuide from "@/app/committees/components/CommitteeGuide";
 import {Metadata} from "next"
+import Header from "@/components/Header"
 
 const committees: {name: string, description: string, guide?: string}[] = [
     {name: "Sağlık", guide: "https://drive.google.com/file/d/1ZyAEr5xCnoIEhH65oIMC7y40QBfrDq3N/view?usp=sharing", description: "Enfeksiyon hastalıkları dünya çapında salgınlara, mortalite ve morbiditede artışa sebep olabildiği gibi birçok kişide sakatlık ve işgücü kayıplarına da neden olmuştur. Bu hastalıklar aynı zamanda geri kalmış ve gelişmekte olan ülkelerde erken yaştaki ölümlerin önde gelen nedeni olarak da belirtilmektedir. Günümüzde mülteciler ve göçmenler dahil nüfusların iç ve uluslararası hareketleri, rastgele ve kontrolsüz şehirleşme, ekonomik gelişme ve arazilerin kullanış şekillerindeki değişiklikler ile oluşan ekolojik ve iklimsel değişiklikler hastalıkların yayılması için yeni fırsatlar yaratmaktadır. Çiçek aşısının bulunması ile çiçek hastalığı gibi bazı bulaşıcı hastalıkları yeryüzünden eradike edilmiştir, ancak AIDS, Ebola, Kırım Konga Kanamalı Ateşi / COVID-19 gibi yeni hastalıklar eradike edilen hastalıkların yerini hızla almıştır. The Economist tarafından yapılan analize göre, dünyada Covid-19'dan hayatını kaybedenlerin sayısının 14 milyon ile 23,5 milyon arasında olduğunu tahmin edilmekte, ülkemizde ise 102.174 kişinin ise yaşamını yitirdiği açıklanmıştır. Ülkemizdeki iç ve uluslararası hareketliliği, ekolojik ve iklimsel değişiklikleri göz önünde bulundurularak olası salgın hastalıklara karşı ne gibi önlemler alınabilir?"},
@@ -25,19 +26,27 @@ export const metadata: Metadata = {
 
 export default function CommitteesPage() {
     return (
-        <section className="min-h-[max(100dvh,860px)] w-full">
-            <div className="fixed min-h-screen w-full">
-                <Image fill src={Banner} alt="banner" className="object-cover blur-[10px] z-20" />
-                <div className="absolute min-h-[max(100dvh,860px)] w-full bg-[rgba(255,255,255,.6)] z-30"></div>
-            </div>
-            <div className="relative flex flex-col justify-center z-40 max-w-screen-2xl min-h-[max(100dvh,860px)] mx-auto pt-32 pb-32 px-3 sm:pt-0 sm:pb-2 xsm:px-10">
-                <h2 className="text-[#750000] font-bold text-[clamp(28px,3dvw,40px)] mb-10">Komitelerimiz</h2>
-                <div className="grid grid-cols-2 gap-7 sm:gap-10 [&>div]:col-span-2 sm:[&>div]:col-span-1">
-                    {committees.map(committee => (
-                        committee.guide ? <CommitteeGuide key={committee.name} name={committee.name} description={committee.description} guide={committee.guide} /> : <Committee key={committee.name} name={committee.name} description={committee.description} />
-                    ))}
+        <>
+            <Header/>
+            <section className="min-h-[max(100dvh,860px)] w-full">
+                <div className="fixed min-h-screen w-full">
+                    <Image fill src={Banner} alt="banner" className="object-cover blur-[10px] z-20"/>
+                    <div className="absolute min-h-[max(100dvh,860px)] w-full bg-[rgba(255,255,255,.6)] z-30"></div>
                 </div>
-            </div>
-        </section>
+                <div
+                    className="relative flex flex-col justify-center z-40 max-w-screen-2xl min-h-[max(100dvh,860px)] mx-auto pt-32 pb-32 px-3 sm:pt-0 sm:pb-2 xsm:px-10">
+                    <h2 className="text-[#750000] font-bold text-[clamp(28px,3dvw,40px)] mb-10">Komitelerimiz</h2>
+                    <div className="grid grid-cols-2 gap-7 sm:gap-10 [&>div]:col-span-2 sm:[&>div]:col-span-1">
+                        {committees.map(committee => (
+                            committee.guide ? <CommitteeGuide key={committee.name} name={committee.name}
+                                                              description={committee.description}
+                                                              guide={committee.guide}/> :
+                                <Committee key={committee.name} name={committee.name}
+                                           description={committee.description}/>
+                        ))}
+                    </div>
+                </div>
+            </section>
+        </>
     )
 }

@@ -9,6 +9,7 @@ import PositionSelector from "@/app/apply/components/PositionSelector";
 import ApplicationForm from "@/app/apply/components/ApplicationForm";
 import ApplicationSent from "@/app/apply/components/ApplicationSent";
 import {Metadata} from "next"
+import Header from "@/components/Header"
 
 type AnimationKeyframes = {
     from: Keyframe,
@@ -50,25 +51,33 @@ export const metadata: Metadata = {
 
 export default function ApplicationPage() {
     return (
-        <section className="relative text-white flex flex-col min-h-[100dvh] w-full pb-36">
-            <div className="z-40 w-full h-full inset-0 absolute [mask-type:alpha] backdrop-blur-[10px] [mask-image:linear-gradient(180deg,transparent_0%,rgba(0,0,0)_40%)]"></div>
-            <div className="fixed w-full h-full inset-0">
-                <div className="absolute w-full h-full bg-[linear-gradient(180deg,transparent,rgba(0,0,0,.723)_26%,rgba(0,0,0,.918))] z-30 bg-fixed"></div>
-                <Image className="z-20 object-cover object-center !h-1/2 md:!h-full" fill src={Banner} alt={"banner"} />
-                <Image className="inline-block !top-1/2 z-20 object-cover object-center -scale-y-100 !h-1/2 md:hidden" fill src={Banner} alt={"banner"} />
-            </div>
+        <>
+            <Header align="center"/>
+            <section className="relative text-white flex flex-col min-h-[100dvh] w-full pb-36">
+                <div
+                    className="z-40 w-full h-full inset-0 absolute [mask-type:alpha] backdrop-blur-[10px] [mask-image:linear-gradient(180deg,transparent_0%,rgba(0,0,0)_40%)]"></div>
+                <div className="fixed w-full h-full inset-0">
+                    <div
+                        className="absolute w-full h-full bg-[linear-gradient(180deg,transparent,rgba(0,0,0,.723)_26%,rgba(0,0,0,.918))] z-30 bg-fixed"></div>
+                    <Image className="z-20 object-cover object-center !h-1/2 md:!h-full" fill src={Banner}
+                           alt={"banner"}/>
+                    <Image
+                        className="inline-block !top-1/2 z-20 object-cover object-center -scale-y-100 !h-1/2 md:hidden"
+                        fill src={Banner} alt={"banner"}/>
+                </div>
 
-            <UserContextProvider>
-                <AuthWrapper>
-                    <PaginationContextProvider>
-                        <AnimatedPagination animation={animation}>
-                            <PositionSelector />
-                            <ApplicationForm />
-                            <ApplicationSent />
-                        </AnimatedPagination>
-                    </PaginationContextProvider>
-                </AuthWrapper>
-            </UserContextProvider>
-        </section>
+                <UserContextProvider>
+                    <AuthWrapper>
+                        <PaginationContextProvider>
+                            <AnimatedPagination animation={animation}>
+                                <PositionSelector/>
+                                <ApplicationForm/>
+                                <ApplicationSent/>
+                            </AnimatedPagination>
+                        </PaginationContextProvider>
+                    </AuthWrapper>
+                </UserContextProvider>
+            </section>
+        </>
     )
 }
