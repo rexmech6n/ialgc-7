@@ -16,11 +16,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: "https://ialgc.org/committees",
             lastModified: new Date(),
             priority: 0.5
-        },
-        {
-            url: "https://ialgc.org/game",
-            lastModified: new Date(),
-            priority: 0.2
         }
     ]
 }
