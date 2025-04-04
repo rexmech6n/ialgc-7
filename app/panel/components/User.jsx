@@ -56,6 +56,10 @@ const User = ({ user, activeQuestions, secenekler }) => {
                 </div>
             </div>
             <div className="fields">
+                <div key={question.name} className="field">
+                    <p className="field-label">Email</p>
+                    <p className="field-content">{user.email}</p>
+                </div>
                 {activeQuestions.map(question => (
                     <div key={question.name} className="field">
                         <p className="field-label">{question.question}</p>
