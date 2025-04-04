@@ -43,7 +43,7 @@ export default function useSignInWithEmailLink() {
         const email = ((new FormData(e.target as HTMLFormElement)).get("email") as string).trim()
 
         const actionCodeSettings = {
-            url: `https://ialgc.org/${pathname}`,
+            url: process.env.NODE_ENV === "development" ? `http://localhost:3000/${pathname}` : `https://ialg.org/${pathname}`,
             handleCodeInApp: true
         }
 
