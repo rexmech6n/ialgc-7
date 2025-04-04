@@ -59,6 +59,7 @@
 
 .field-content {
     font-size: 16px;
+    white-space: pre-wrap;
 }
 
 .user-buttons {
