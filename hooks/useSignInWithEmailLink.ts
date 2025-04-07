@@ -8,7 +8,7 @@ export default function useSignInWithEmailLink() {
 
     const [isSent, setIsSent] = useState<boolean>(false)
     const [isEmailStored, setIsEmailStored] = useState<boolean>(true)
-    const [loading, setLoading] = useState<boolean>(false)
+    const [loading, setLoading] = useState<boolean>(true)
     const [error, setError] = useState<string | null>(null)
 
     useEffect(() => {
