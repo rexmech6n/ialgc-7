@@ -95,7 +95,7 @@ const User = ({ user, activeQuestions, secenekler }) => {
                 </div>
                 {activeQuestions.map(question => (
                     <div key={question.name} className="field">
-                        <p className="field-label">{question.label}</p>
+                        <p className="field-label">{question.question}</p>
                         <p className="field-content">{user.application.form[question.name]}</p>
                     </div>
                 ))}
