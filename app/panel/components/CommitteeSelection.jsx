@@ -1,17 +1,14 @@
 const komiteler = [
-    {label: "Sağlık", value: "Sağlık"},
-    {label: "İnsan Hakları", value: "İnsan Hakları"},
-    {label: "Ekonomi", value: "Ekonomi"},
-    {label: "Eğitim", value: "Eğitim"},
-    {label: "Çevre", value: "Çevre"},
-    {label: "Tarım-Orman", value: "Tarım-Orman"},
     {label: "Dışişleri", value: "Dışişleri"},
+    {label: "İçişleri", value: "İçişleri"},
+    {label: "Çevre", value: "Çevre"},
+    {label: "Eğitim", value: "Eğitim"},
     {label: "Turizm", value: "Turizm"},
-    {label: "Spor", value: "Spor"},
-    {label: "İnönü Kabinesi", value: "İnönü Kabinesi"},
-    {label: "1. Dünya Savaşı", value: "1. Dünya Savaşı"},
+    {label: "Sağlık", value: "Sağlık"},
+    {label: "Ekonomi", value: "Ekonomi"},
+    {label: "Kriz: 93 Harbi", value: "93 Harbi"},
+    {label: "Kriz: Amerikan Bağımsızlık Savaşı", value: "Amerikan Bağımsızlık Savaşı"},
 ]
-
 
 const CommitteeSelection = ({ values }) => {
 
